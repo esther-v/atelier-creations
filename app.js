@@ -16,3 +16,16 @@ if(window.matchMedia("(min-width: 850px)").matches) {
         modaleGalerie.classList.remove('active-modale');
     })
 }
+
+
+// Anim navbar
+
+const nav = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) {
+        nav.classList.add('anim-nav');
+    } else {
+        nav.classList.remove('anim-nav')
+    }
+})
