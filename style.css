@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: #f1f1f1;
@@ -472,4 +476,113 @@ h1 {
     .titre-galerie {
         font-size: 35px;
     }
+}
+
+/* -------- Parallax -------- */
+
+.parallax {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(ressources/parallax-2.png);
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-txt {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 550px) {
+    .parallax-txt {
+        font-size: 35px;
+    }
+}
+
+/* -------- Contact -------- */
+
+.titre-contact {
+    border-top: 1px dashed #000;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0;
+}
+
+form {
+   width: 50%;
+   margin: 0 auto; 
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   padding-bottom: 30px;
+   position: relative;
+}
+
+label, input {
+    width: 100%;
+    font-size: 20px;
+    margin: 5px 0;
+
+}
+
+form input {
+    padding: 10px 5px;   
+}
+
+input:nth-child(4) {
+   margin-bottom: 20px; 
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+label:nth-child(5) {
+    margin-bottom: 10px;
+}
+
+.form-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #333;
+
+}
+
+@media screen and (max-width: 1100px) {
+    #contact {
+        width: 80%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px dashed #000;
+}
+
+.coordonnees {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 90px;
+}
+
+.coordonnees p {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
