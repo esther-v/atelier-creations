@@ -522,7 +522,7 @@ form {
    align-items: flex-start;
    flex-direction: column;
    padding-bottom: 30px;
-   position: relative;
+   /* position: relative; */
 }
 
 label, input {
@@ -562,11 +562,7 @@ label:nth-child(5) {
 
 }
 
-@media screen and (max-width: 1100px) {
-    #contact {
-        width: 80%;
-    }
-}
+
 
 footer {
     text-align: center;
